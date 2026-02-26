@@ -1,0 +1,1866 @@
+{
+  "cod": "200",
+  "message": 0,
+  "cnt": 40,
+  "list": [
+    {
+      "dt": 1733497200,
+      "summery": "scattered clouds, 54°F, feels like 51°F, winds 5 mph from Southwest, 60% humidity",
+      "main": {
+        "temprature": 54,
+        "temprature_feels_like": 51,
+        "temprature_min": 48,
+        "temprature_max": 56,
+        "temprature_unit": "F",
+        "pressure": 1018,
+        "sea_level_pressure": 1018,
+        "ground_level_pressure": 1013,
+        "pressure_unit": "hPa",
+        "humidity": 68,
+        "humidity_unit": "%",
+        "temp_kf": 0.69
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 42,
+        "unit": "%"
+      },
+      "rain": {
+        "amount": 0,
+        "unit": "mm in the last 1 hour"
+      },
+      "snow": {
+        "amount": 0,
+        "unit": "mm in the last 1 hour"
+      },
+      "wind": {
+        "speed": 5,
+        "degrees": 216,
+        "gust_speed": 11,
+        "speed_unit": "mph"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-06 15:00:00"
+    },
+    {
+      "dt": 1733508000,
+      "summery": "light rain, 46°F, feels like 42°F, winds 9 mph from South, 72% humidity",
+      "main": {
+        "temprature": 46,
+        "temprature_feels_like": 42,
+        "temprature_min": 44,
+        "temprature_max": 48,
+        "temprature_unit": "F",
+        "pressure": 1016,
+        "sea_level_pressure": 1016,
+        "ground_level_pressure": 1010,
+        "pressure_unit": "hPa",
+        "humidity": 72,
+        "humidity_unit": "%",
+        "temp_kf": 0.43
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 70,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 9,
+        "degrees": 180,
+        "gust_speed": 24,
+        "speed_unit": "mph"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 20,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.11,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-06 18:00:00"
+    },
+    {
+      "dt": 1733518800,
+      "summery": "overcast clouds, 50°F, feels like 45°F, winds 16 mph from South, 75% humidity",
+      "main": {
+        "temprature": 50,
+        "temprature_feels_like": 45,
+        "temprature_min": 48,
+        "temprature_max": 52,
+        "temprature_unit": "F",
+        "pressure": 1008,
+        "sea_level_pressure": 1008,
+        "ground_level_pressure": 1004,
+        "pressure_unit": "hPa",
+        "humidity": 80,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 16,
+        "degrees": 179,
+        "gust_speed": 34,
+        "speed_unit": "mph"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-06 21:00:00"
+    },
+    {
+      "dt": 1733529600,
+      "summery": "light rain, 53°F, feels like 52°F, winds 20 mph from South-Southwest, 85% humidity",
+      "main": {
+        "temprature": 53,
+        "temprature_feels_like": 52,
+        "temprature_min": 50,
+        "temprature_max": 55,
+        "temprature_unit": "F",
+        "pressure": 999,
+        "sea_level_pressure": 999,
+        "ground_level_pressure": 995,
+        "pressure_unit": "hPa",
+        "humidity": 90,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 20,
+        "degrees": 195,
+        "gust_speed": 44,
+        "speed_unit": "mph"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 1.07,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-07 00:00:00"
+    },
+    {
+      "dt": 1733540400,
+      "summery": "light rain, 51°F, feels like 49°F, winds 21 mph from Southwest, 68% humidity",
+      "main": {
+        "temprature": 51,
+        "temprature_feels_like": 49,
+        "temprature_min": 48,
+        "temprature_max": 53,
+        "temprature_unit": "F",
+        "pressure": 994,
+        "sea_level_pressure": 994,
+        "ground_level_pressure": 990,
+        "pressure_unit": "hPa",
+        "humidity": 68,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 91,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 21,
+        "degrees": 233,
+        "gust_speed": 42,
+        "speed_unit": "mph"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 80,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.32,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-07 03:00:00"
+    },
+    {
+      "dt": 1733551200,
+      "summery": "overcast clouds, 48°F, feels like 40°F, winds 23 mph from West-Southwest, 69% humidity",
+      "main": {
+        "temprature": 48,
+        "temprature_feels_like": 40,
+        "temprature_min": 45,
+        "temprature_max": 50,
+        "temprature_unit": "F",
+        "pressure": 991,
+        "sea_level_pressure": 991,
+        "ground_level_pressure": 987,
+        "pressure_unit": "hPa",
+        "humidity": 69,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 96,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 23,
+        "degrees": 237,
+        "gust_speed": 47,
+        "speed_unit": "mph"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 6,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-07 06:00:00"
+    },
+    {
+      "dt": 1733562000,
+      "summery": "light rain, 44°F, feels like 35°F, winds 26 mph from West, 76% humidity",
+      "main": {
+        "temprature": 44,
+        "temprature_feels_like": 35,
+        "temprature_min": 42,
+        "temprature_max": 46,
+        "temprature_unit": "F",
+        "pressure": 990,
+        "sea_level_pressure": 990,
+        "ground_level_pressure": 986,
+        "pressure_unit": "hPa",
+        "humidity": 76,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 26,
+        "degrees": 259,
+        "gust_speed": 50,
+        "speed_unit": "mph"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 56.99999999999999,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.31,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-07 09:00:00"
+    },
+    {
+      "dt": 1733572800,
+      "summery": "light rain, 42°F, feels like 34°F, winds 23 mph from West-Southwest, 88% humidity",
+      "main": {
+        "temprature": 42,
+        "temprature_feels_like": 34,
+        "temprature_min": 40,
+        "temprature_max": 44,
+        "temprature_unit": "F",
+        "pressure": 989,
+        "sea_level_pressure": 989,
+        "ground_level_pressure": 985,
+        "pressure_unit": "hPa",
+        "humidity": 88,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 23,
+        "degrees": 257,
+        "gust_speed": 48,
+        "speed_unit": "mph"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 1.18,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-07 12:00:00"
+    },
+    {
+      "dt": 1733583600,
+      "summery": "moderate rain, 279.16K, feels like 274.22K, winds 9.44 meter/sec from Northwest, 83% humidity",
+      "main": {
+        "temprature": 279.16,
+        "temprature_feels_like": 274.22,
+        "temprature_min": 279.16,
+        "temprature_max": 279.16,
+        "temprature_unit": "K",
+        "pressure": 990,
+        "sea_level_pressure": 990,
+        "ground_level_pressure": 986,
+        "pressure_unit": "hPa",
+        "humidity": 83,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 501,
+          "main": "Rain",
+          "description": "moderate rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 9.44,
+        "degrees": 311,
+        "gust_speed": 17.05,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 3.85,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-07 15:00:00"
+    },
+    {
+      "dt": 1733594400,
+      "summery": "light rain, 278.93K, feels like 273.99K, winds 9.17 meter/sec from Northwest, 85% humidity",
+      "main": {
+        "temprature": 278.93,
+        "temprature_feels_like": 273.99,
+        "temprature_min": 278.93,
+        "temprature_max": 278.93,
+        "temprature_unit": "K",
+        "pressure": 995,
+        "sea_level_pressure": 995,
+        "ground_level_pressure": 991,
+        "pressure_unit": "hPa",
+        "humidity": 85,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 9.17,
+        "degrees": 317,
+        "gust_speed": 20.88,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.26,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-07 18:00:00"
+    },
+    {
+      "dt": 1733605200,
+      "summery": "light rain, 279.12K, feels like 274.22K, winds 9.26 meter/sec from Northwest, 88% humidity",
+      "main": {
+        "temprature": 279.12,
+        "temprature_feels_like": 274.22,
+        "temprature_min": 279.12,
+        "temprature_max": 279.12,
+        "temprature_unit": "K",
+        "pressure": 998,
+        "sea_level_pressure": 998,
+        "ground_level_pressure": 994,
+        "pressure_unit": "hPa",
+        "humidity": 88,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 9.26,
+        "degrees": 320,
+        "gust_speed": 21.29,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.61,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-07 21:00:00"
+    },
+    {
+      "dt": 1733616000,
+      "summery": "light rain, 279.91K, feels like 275.33K, winds 9 meter/sec from North-Northwest, 86% humidity",
+      "main": {
+        "temprature": 279.91,
+        "temprature_feels_like": 275.33,
+        "temprature_min": 279.91,
+        "temprature_max": 279.91,
+        "temprature_unit": "K",
+        "pressure": 1001,
+        "sea_level_pressure": 1001,
+        "ground_level_pressure": 997,
+        "pressure_unit": "hPa",
+        "humidity": 86,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 9,
+        "degrees": 334,
+        "gust_speed": 17.48,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.37,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-08 00:00:00"
+    },
+    {
+      "dt": 1733626800,
+      "summery": "light rain, 279.6K, feels like 274.51K, winds 10.61 meter/sec from North-Northwest, 87% humidity",
+      "main": {
+        "temprature": 279.6,
+        "temprature_feels_like": 274.51,
+        "temprature_min": 279.6,
+        "temprature_max": 279.6,
+        "temprature_unit": "K",
+        "pressure": 1005,
+        "sea_level_pressure": 1005,
+        "ground_level_pressure": 1000,
+        "pressure_unit": "hPa",
+        "humidity": 87,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 10.61,
+        "degrees": 344,
+        "gust_speed": 19.41,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 82,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.39,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-08 03:00:00"
+    },
+    {
+      "dt": 1733637600,
+      "summery": "light rain, 279.61K, feels like 274.75K, winds 9.68 meter/sec from North-Northwest, 89% humidity",
+      "main": {
+        "temprature": 279.61,
+        "temprature_feels_like": 274.75,
+        "temprature_min": 279.61,
+        "temprature_max": 279.61,
+        "temprature_unit": "K",
+        "pressure": 1009,
+        "sea_level_pressure": 1009,
+        "ground_level_pressure": 1004,
+        "pressure_unit": "hPa",
+        "humidity": 89,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 9.68,
+        "degrees": 347,
+        "gust_speed": 18.59,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.57,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-08 06:00:00"
+    },
+    {
+      "dt": 1733648400,
+      "summery": "light rain, 279.89K, feels like 275.23K, winds 9.28 meter/sec from North, 89% humidity",
+      "main": {
+        "temprature": 279.89,
+        "temprature_feels_like": 275.23,
+        "temprature_min": 279.89,
+        "temprature_max": 279.89,
+        "temprature_unit": "K",
+        "pressure": 1013,
+        "sea_level_pressure": 1013,
+        "ground_level_pressure": 1008,
+        "pressure_unit": "hPa",
+        "humidity": 89,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 9.28,
+        "degrees": 355,
+        "gust_speed": 18.53,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 1.23,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-08 09:00:00"
+    },
+    {
+      "dt": 1733659200,
+      "summery": "light rain, 280.28K, feels like 276.22K, winds 7.56 meter/sec from North, 87% humidity",
+      "main": {
+        "temprature": 280.28,
+        "temprature_feels_like": 276.22,
+        "temprature_min": 280.28,
+        "temprature_max": 280.28,
+        "temprature_unit": "K",
+        "pressure": 1015,
+        "sea_level_pressure": 1015,
+        "ground_level_pressure": 1011,
+        "pressure_unit": "hPa",
+        "humidity": 87,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 7.56,
+        "degrees": 1,
+        "gust_speed": 14.59,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.56,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-08 12:00:00"
+    },
+    {
+      "dt": 1733670000,
+      "summery": "light rain, 281.38K, feels like 277.84K, winds 6.91 meter/sec from North-Northeast, 73% humidity",
+      "main": {
+        "temprature": 281.38,
+        "temprature_feels_like": 277.84,
+        "temprature_min": 281.38,
+        "temprature_max": 281.38,
+        "temprature_unit": "K",
+        "pressure": 1018,
+        "sea_level_pressure": 1018,
+        "ground_level_pressure": 1014,
+        "pressure_unit": "hPa",
+        "humidity": 73,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 44,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 6.91,
+        "degrees": 22,
+        "gust_speed": 13.95,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 99,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.48,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-08 15:00:00"
+    },
+    {
+      "dt": 1733680800,
+      "summery": "broken clouds, 281.09K, feels like 277.34K, winds 7.34 meter/sec from North-Northeast, 78% humidity",
+      "main": {
+        "temprature": 281.09,
+        "temprature_feels_like": 277.34,
+        "temprature_min": 281.09,
+        "temprature_max": 281.09,
+        "temprature_unit": "K",
+        "pressure": 1022,
+        "sea_level_pressure": 1022,
+        "ground_level_pressure": 1017,
+        "pressure_unit": "hPa",
+        "humidity": 78,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 73,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 7.34,
+        "degrees": 28,
+        "gust_speed": 15.43,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-08 18:00:00"
+    },
+    {
+      "dt": 1733691600,
+      "summery": "overcast clouds, 280.96K, feels like 277.56K, winds 6.14 meter/sec from North-Northeast, 82% humidity",
+      "main": {
+        "temprature": 280.96,
+        "temprature_feels_like": 277.56,
+        "temprature_min": 280.96,
+        "temprature_max": 280.96,
+        "temprature_unit": "K",
+        "pressure": 1026,
+        "sea_level_pressure": 1026,
+        "ground_level_pressure": 1021,
+        "pressure_unit": "hPa",
+        "humidity": 82,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 6.14,
+        "degrees": 28,
+        "gust_speed": 13.27,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-08 21:00:00"
+    },
+    {
+      "dt": 1733702400,
+      "summery": "broken clouds, 280.49K, feels like 277.13K, winds 5.69 meter/sec from North-Northeast, 86% humidity",
+      "main": {
+        "temprature": 280.49,
+        "temprature_feels_like": 277.13,
+        "temprature_min": 280.49,
+        "temprature_max": 280.49,
+        "temprature_unit": "K",
+        "pressure": 1027,
+        "sea_level_pressure": 1027,
+        "ground_level_pressure": 1023,
+        "pressure_unit": "hPa",
+        "humidity": 86,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 79,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 5.69,
+        "degrees": 17,
+        "gust_speed": 12.71,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-09 00:00:00"
+    },
+    {
+      "dt": 1733713200,
+      "summery": "overcast clouds, 281.19K, feels like 277.91K, winds 5.97 meter/sec from North-Northeast, 82% humidity",
+      "main": {
+        "temprature": 281.19,
+        "temprature_feels_like": 277.91,
+        "temprature_min": 281.19,
+        "temprature_max": 281.19,
+        "temprature_unit": "K",
+        "pressure": 1029,
+        "sea_level_pressure": 1029,
+        "ground_level_pressure": 1024,
+        "pressure_unit": "hPa",
+        "humidity": 82,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 5.97,
+        "degrees": 21,
+        "gust_speed": 13.23,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-09 03:00:00"
+    },
+    {
+      "dt": 1733724000,
+      "summery": "light rain, 281.13K, feels like 277.75K, winds 6.23 meter/sec from North-Northeast, 79% humidity",
+      "main": {
+        "temprature": 281.13,
+        "temprature_feels_like": 277.75,
+        "temprature_min": 281.13,
+        "temprature_max": 281.13,
+        "temprature_unit": "K",
+        "pressure": 1030,
+        "sea_level_pressure": 1030,
+        "ground_level_pressure": 1025,
+        "pressure_unit": "hPa",
+        "humidity": 79,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 6.23,
+        "degrees": 27,
+        "gust_speed": 13.11,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 20,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.13,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-09 06:00:00"
+    },
+    {
+      "dt": 1733734800,
+      "summery": "light rain, 281K, feels like 277.37K, winds 6.86 meter/sec from North-Northeast, 77% humidity",
+      "main": {
+        "temprature": 281,
+        "temprature_feels_like": 277.37,
+        "temprature_min": 281,
+        "temprature_max": 281,
+        "temprature_unit": "K",
+        "pressure": 1031,
+        "sea_level_pressure": 1031,
+        "ground_level_pressure": 1026,
+        "pressure_unit": "hPa",
+        "humidity": 77,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 6.86,
+        "degrees": 22,
+        "gust_speed": 12.59,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 20,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.11,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-09 09:00:00"
+    },
+    {
+      "dt": 1733745600,
+      "summery": "light rain, 280.51K, feels like 277.43K, winds 5.03 meter/sec from Northeast, 82% humidity",
+      "main": {
+        "temprature": 280.51,
+        "temprature_feels_like": 277.43,
+        "temprature_min": 280.51,
+        "temprature_max": 280.51,
+        "temprature_unit": "K",
+        "pressure": 1031,
+        "sea_level_pressure": 1031,
+        "ground_level_pressure": 1027,
+        "pressure_unit": "hPa",
+        "humidity": 82,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 5.03,
+        "degrees": 43,
+        "gust_speed": 10.99,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 97,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.91,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-09 12:00:00"
+    },
+    {
+      "dt": 1733756400,
+      "summery": "light rain, 280.25K, feels like 276.61K, winds 6.28 meter/sec from North-Northeast, 81% humidity",
+      "main": {
+        "temprature": 280.25,
+        "temprature_feels_like": 276.61,
+        "temprature_min": 280.25,
+        "temprature_max": 280.25,
+        "temprature_unit": "K",
+        "pressure": 1032,
+        "sea_level_pressure": 1032,
+        "ground_level_pressure": 1027,
+        "pressure_unit": "hPa",
+        "humidity": 81,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 6.28,
+        "degrees": 33,
+        "gust_speed": 12.21,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 1.71,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-09 15:00:00"
+    },
+    {
+      "dt": 1733767200,
+      "summery": "light rain, 279.81K, feels like 276.1K, winds 6.13 meter/sec from North-Northeast, 78% humidity",
+      "main": {
+        "temprature": 279.81,
+        "temprature_feels_like": 276.1,
+        "temprature_min": 279.81,
+        "temprature_max": 279.81,
+        "temprature_unit": "K",
+        "pressure": 1033,
+        "sea_level_pressure": 1033,
+        "ground_level_pressure": 1028,
+        "pressure_unit": "hPa",
+        "humidity": 78,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 500,
+          "main": "Rain",
+          "description": "light rain",
+          "icon": "10n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 97,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 6.13,
+        "degrees": 31,
+        "gust_speed": 11.83,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 100,
+      "probability_of_precipitation_unit": "%",
+      "rain": {
+        "amount": 0.1,
+        "unit": "mm in the last "
+      },
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-09 18:00:00"
+    },
+    {
+      "dt": 1733778000,
+      "summery": "broken clouds, 279.36K, feels like 275.81K, winds 5.43 meter/sec from Northeast, 79% humidity",
+      "main": {
+        "temprature": 279.36,
+        "temprature_feels_like": 275.81,
+        "temprature_min": 279.36,
+        "temprature_max": 279.36,
+        "temprature_unit": "K",
+        "pressure": 1034,
+        "sea_level_pressure": 1034,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 79,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 58,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 5.43,
+        "degrees": 34,
+        "gust_speed": 11.77,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-09 21:00:00"
+    },
+    {
+      "dt": 1733788800,
+      "summery": "broken clouds, 279.66K, feels like 276.13K, winds 5.57 meter/sec from North-Northeast, 78% humidity",
+      "main": {
+        "temprature": 279.66,
+        "temprature_feels_like": 276.13,
+        "temprature_min": 279.66,
+        "temprature_max": 279.66,
+        "temprature_unit": "K",
+        "pressure": 1034,
+        "sea_level_pressure": 1034,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 78,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 79,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 5.57,
+        "degrees": 31,
+        "gust_speed": 11.78,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-10 00:00:00"
+    },
+    {
+      "dt": 1733799600,
+      "summery": "overcast clouds, 280K, feels like 276.36K, winds 6.09 meter/sec from North-Northeast, 80% humidity",
+      "main": {
+        "temprature": 280,
+        "temprature_feels_like": 276.36,
+        "temprature_min": 280,
+        "temprature_max": 280,
+        "temprature_unit": "K",
+        "pressure": 1033,
+        "sea_level_pressure": 1033,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 80,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 6.09,
+        "degrees": 30,
+        "gust_speed": 12.7,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-10 03:00:00"
+    },
+    {
+      "dt": 1733810400,
+      "summery": "overcast clouds, 280.45K, feels like 277.13K, winds 5.57 meter/sec from Northeast, 83% humidity",
+      "main": {
+        "temprature": 280.45,
+        "temprature_feels_like": 277.13,
+        "temprature_min": 280.45,
+        "temprature_max": 280.45,
+        "temprature_unit": "K",
+        "pressure": 1033,
+        "sea_level_pressure": 1033,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 83,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 5.57,
+        "degrees": 35,
+        "gust_speed": 12.1,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-10 06:00:00"
+    },
+    {
+      "dt": 1733821200,
+      "summery": "overcast clouds, 280.37K, feels like 276.86K, winds 6 meter/sec from Northeast, 84% humidity",
+      "main": {
+        "temprature": 280.37,
+        "temprature_feels_like": 276.86,
+        "temprature_min": 280.37,
+        "temprature_max": 280.37,
+        "temprature_unit": "K",
+        "pressure": 1034,
+        "sea_level_pressure": 1034,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 84,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 6,
+        "degrees": 34,
+        "gust_speed": 11.87,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-10 09:00:00"
+    },
+    {
+      "dt": 1733832000,
+      "summery": "overcast clouds, 280.8K, feels like 277.56K, winds 5.59 meter/sec from Northeast, 79% humidity",
+      "main": {
+        "temprature": 280.8,
+        "temprature_feels_like": 277.56,
+        "temprature_min": 280.8,
+        "temprature_max": 280.8,
+        "temprature_unit": "K",
+        "pressure": 1034,
+        "sea_level_pressure": 1034,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 79,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 5.59,
+        "degrees": 34,
+        "gust_speed": 11.47,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-10 12:00:00"
+    },
+    {
+      "dt": 1733842800,
+      "summery": "overcast clouds, 280.94K, feels like 277.91K, winds 5.15 meter/sec from North-Northeast, 79% humidity",
+      "main": {
+        "temprature": 280.94,
+        "temprature_feels_like": 277.91,
+        "temprature_min": 280.94,
+        "temprature_max": 280.94,
+        "temprature_unit": "K",
+        "pressure": 1033,
+        "sea_level_pressure": 1033,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 79,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 98,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 5.15,
+        "degrees": 33,
+        "gust_speed": 10.3,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-10 15:00:00"
+    },
+    {
+      "dt": 1733853600,
+      "summery": "overcast clouds, 280.37K, feels like 277.44K, winds 4.6 meter/sec from Northeast, 73% humidity",
+      "main": {
+        "temprature": 280.37,
+        "temprature_feels_like": 277.44,
+        "temprature_min": 280.37,
+        "temprature_max": 280.37,
+        "temprature_unit": "K",
+        "pressure": 1034,
+        "sea_level_pressure": 1034,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 73,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 99,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 4.6,
+        "degrees": 40,
+        "gust_speed": 9.12,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-10 18:00:00"
+    },
+    {
+      "dt": 1733864400,
+      "summery": "overcast clouds, 279.84K, feels like 276.75K, winds 4.67 meter/sec from Northeast, 73% humidity",
+      "main": {
+        "temprature": 279.84,
+        "temprature_feels_like": 276.75,
+        "temprature_min": 279.84,
+        "temprature_max": 279.84,
+        "temprature_unit": "K",
+        "pressure": 1034,
+        "sea_level_pressure": 1034,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 73,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 4.67,
+        "degrees": 34,
+        "gust_speed": 8.84,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-10 21:00:00"
+    },
+    {
+      "dt": 1733875200,
+      "summery": "overcast clouds, 280.08K, feels like 277.25K, winds 4.25 meter/sec from Northeast, 68% humidity",
+      "main": {
+        "temprature": 280.08,
+        "temprature_feels_like": 277.25,
+        "temprature_min": 280.08,
+        "temprature_max": 280.08,
+        "temprature_unit": "K",
+        "pressure": 1033,
+        "sea_level_pressure": 1033,
+        "ground_level_pressure": 1029,
+        "pressure_unit": "hPa",
+        "humidity": 68,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 4.25,
+        "degrees": 40,
+        "gust_speed": 7.97,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-11 00:00:00"
+    },
+    {
+      "dt": 1733886000,
+      "summery": "overcast clouds, 279.96K, feels like 277.17K, winds 4.11 meter/sec from Northeast, 64% humidity",
+      "main": {
+        "temprature": 279.96,
+        "temprature_feels_like": 277.17,
+        "temprature_min": 279.96,
+        "temprature_max": 279.96,
+        "temprature_unit": "K",
+        "pressure": 1032,
+        "sea_level_pressure": 1032,
+        "ground_level_pressure": 1028,
+        "pressure_unit": "hPa",
+        "humidity": 64,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 4.11,
+        "degrees": 37,
+        "gust_speed": 7.58,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-11 03:00:00"
+    },
+    {
+      "dt": 1733896800,
+      "summery": "overcast clouds, 279.93K, feels like 277.24K, winds 3.91 meter/sec from Northeast, 61% humidity",
+      "main": {
+        "temprature": 279.93,
+        "temprature_feels_like": 277.24,
+        "temprature_min": 279.93,
+        "temprature_max": 279.93,
+        "temprature_unit": "K",
+        "pressure": 1032,
+        "sea_level_pressure": 1032,
+        "ground_level_pressure": 1027,
+        "pressure_unit": "hPa",
+        "humidity": 61,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 3.91,
+        "degrees": 42,
+        "gust_speed": 7.38,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "night"
+      },
+      "dt_txt": "2024-12-11 06:00:00"
+    },
+    {
+      "dt": 1733907600,
+      "summery": "overcast clouds, 279.93K, feels like 277.25K, winds 3.9 meter/sec from Northeast, 62% humidity",
+      "main": {
+        "temprature": 279.93,
+        "temprature_feels_like": 277.25,
+        "temprature_min": 279.93,
+        "temprature_max": 279.93,
+        "temprature_unit": "K",
+        "pressure": 1032,
+        "sea_level_pressure": 1032,
+        "ground_level_pressure": 1028,
+        "pressure_unit": "hPa",
+        "humidity": 62,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 3.9,
+        "degrees": 44,
+        "gust_speed": 7.38,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-11 09:00:00"
+    },
+    {
+      "dt": 1733918400,
+      "summery": "overcast clouds, 280.81K, feels like 278.5K, winds 3.58 meter/sec from Northeast, 59% humidity",
+      "main": {
+        "temprature": 280.81,
+        "temprature_feels_like": 278.5,
+        "temprature_min": 280.81,
+        "temprature_max": 280.81,
+        "temprature_unit": "K",
+        "pressure": 1032,
+        "sea_level_pressure": 1032,
+        "ground_level_pressure": 1027,
+        "pressure_unit": "hPa",
+        "humidity": 59,
+        "humidity_unit": "%",
+        "temp_kf": 0
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04d"
+        }
+      ],
+      "clouds": {
+        "cloudiness": 100,
+        "unit": "%"
+      },
+      "wind": {
+        "speed": 3.58,
+        "degrees": 49,
+        "gust_speed": 6.85,
+        "speed_unit": "meter/sec"
+      },
+      "visibility_distance": 10000,
+      "visibility_unit": "m",
+      "probability_of_precipitation": 0,
+      "probability_of_precipitation_unit": "%",
+      "sys": {
+        "part_of_day": "day"
+      },
+      "dt_txt": "2024-12-11 12:00:00"
+    }
+  ],
+  "city": {
+    "id": 4167147,
+    "name": "Lynchburg",
+    "coord": {
+      "lat": 51.5074,
+      "lon": -0.1278
+    },
+    "country": "GB",
+    "population": 1000000,
+    "timezone": 0,
+    "sunrise": 1733471459,
+    "sunrise_txt": "2024-12-06 07:50:59",
+    "sunset": 1733500363,
+    "sunset_txt": "2024-12-06 15:52:43"
+  }
+}

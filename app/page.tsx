@@ -1,4 +1,6 @@
-import { Sun, Moon, Cloud, CloudRain, CloudLightning, Snowflake, CloudFog, Navigation, Wind, Gauge, Droplets, Activity } from 'lucide-react';
+import { Sun, Moon, Cloud, CloudRain, CloudLightning, Snowflake, CloudFog, Navigation, Wind, Gauge, Droplets, Activity, Radar } from 'lucide-react';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 function getHourlyIcon(condition: string, partOfDay: string) {
   const isNight = partOfDay === 'night';
@@ -100,18 +102,42 @@ export default async function Home() {
         next: { revalidate: 600 } 
     };
 
+    let forecastData;
+    let aqiData = null;
+
     try {
         // 2. Fetch BOTH APIs simultaneously for maximum speed
-        const [forecastRes, aqiRes] = await Promise.all([
-            fetch(forecastUrl, options),
-            fetch(aqiUrl, options)
-        ]);
+        try {
+            const [forecastRes, aqiRes] = await Promise.all([
+                fetch(forecastUrl, options),
+                fetch(aqiUrl, options)
+            ]);
 
-        if (!forecastRes.ok) throw new Error(`HTTP error! status: ${forecastRes.status}`);
-        
-        const forecastData = await forecastRes.json();
-        // Fallback to null if AQI fails, so it doesn't break the whole app
-        const aqiData = aqiRes.ok ? await aqiRes.json() : null; 
+            if (!forecastRes.ok) {
+                // Use local fallback for forecast
+                console.warn('Forecast API failed, using local fallback');
+                const fallbackData = readFileSync(join(process.cwd(), 'public', 'forecast-example.json'), 'utf-8');
+                forecastData = JSON.parse(fallbackData);
+            } else {
+                forecastData = await forecastRes.json();
+            }
+            
+            // Fallback to null if AQI fails, so it doesn't break the whole app
+            if (aqiRes.ok) {
+                aqiData = await aqiRes.json();
+            } else {
+                console.warn('AQI API failed, using local fallback');
+                const fallbackData = readFileSync(join(process.cwd(), 'public', 'current-example.json'), 'utf-8');
+                aqiData = JSON.parse(fallbackData);
+            }
+        } catch (apiError) {
+            // If API fetch fails completely (network error, etc.), use local fallbacks
+            console.warn('API fetch failed completely, using local fallbacks', apiError);
+            const forecastFallbackData = readFileSync(join(process.cwd(), 'public', 'forecast-example.json'), 'utf-8');
+            const aqiFallbackData = readFileSync(join(process.cwd(), 'public', 'current-example.json'), 'utf-8');
+            forecastData = JSON.parse(forecastFallbackData);
+            aqiData = JSON.parse(aqiFallbackData);
+        }
         
         // --- DATA EXTRACTION ---
         const currentData = forecastData.list[0];
@@ -214,7 +240,7 @@ export default async function Home() {
                     </div>
 
                     {/* --- THE NEW WIDGET GRID --- */}
-                    <div className="relative z-10 w-[90%] grid grid-cols-2 gap-4 mb-10 shrink-0 text-white">
+                    <div className="relative z-10 w-[90%] grid grid-cols-2 gap-4 mb-5 shrink-0 text-white">
                         
                         {/* 1. AIR QUALITY */}
                         <div className="flex flex-col justify-between rounded-3xl bg-black/20 backdrop-blur-md p-4 border border-white/10 shadow-lg h-36">
@@ -293,7 +319,15 @@ export default async function Home() {
                                 <p className="text-sm font-medium opacity-80 mt-1">hPa</p>
                             </div>
                         </div>
+                    </div>
+                    <div className="relative z-10 w-[90%] rounded-2xl bg-black/20 backdrop-blur-md p-4 text-white mb-10 shrink-0 border border-white/10 shadow-lg">
+                        <div className="flex items-center space-x-2 opacity-70 mb-4">
+                            <Radar size={14} />
+                            <p className="text-xs font-semibold uppercase">Radar</p>
+                        </div>
 
+                        <iframe className="mb-2 rounded-2xl" width="305" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=37.383&lon=-79.218"></iframe>
+                        
                     </div>
                 </main>
             </div>
