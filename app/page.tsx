@@ -92,6 +92,7 @@ export default async function Home() {
     const forecastUrl = 'https://weather-api167.p.rapidapi.com/api/weather/forecast?place=Lynchburg,VA,US&units=imperial';
     // Using the current weather endpoint you provided for AQI
     const aqiUrl = 'https://weather-api167.p.rapidapi.com/api/weather/current?place=Lynchburg,VA,US&units=imperial'; 
+    const alertUrl = "https://api.weather.gov/alerts/active?point=37.4138,-79.1422"
     
     const options = {
         method: 'GET',
@@ -102,15 +103,24 @@ export default async function Home() {
         next: { revalidate: 600 } 
     };
 
+
     let forecastData;
     let aqiData = null;
+    let alertData = null;
 
     try {
         // 2. Fetch BOTH APIs simultaneously for maximum speed
         try {
-            const [forecastRes, aqiRes] = await Promise.all([
-                fetch(forecastUrl, options),
-                fetch(aqiUrl, options)
+            const [forecastRes, aqiRes, alertRes] = await Promise.all([
+            fetch(forecastUrl, options),
+            fetch(aqiUrl, options),
+            fetch(alertUrl, {
+                headers: {
+            "User-Agent": "weather-app (contact@myapp.com)",
+            "Accept": "application/geo+json"
+             },
+        next: { revalidate: 600 }
+             })
             ]);
 
             if (!forecastRes.ok) {
@@ -129,6 +139,9 @@ export default async function Home() {
                 console.warn('AQI API failed, using local fallback');
                 const fallbackData = readFileSync(join(process.cwd(), 'public', 'current-example.json'), 'utf-8');
                 aqiData = JSON.parse(fallbackData);
+            }
+            if (alertRes.ok) {
+                alertData = await alertRes.json();
             }
         } catch (apiError) {
             // If API fetch fails completely (network error, etc.), use local fallbacks
@@ -173,6 +186,18 @@ export default async function Home() {
                     
                     {/* Fake Dynamic Island - Added mx-auto to ensure it stays centered */}
                     <div className="sticky top-4 h-7 w-32 rounded-full bg-black z-50 shrink-0 mx-auto"></div>
+
+                    {/* --- WEATHER ALERTS --- */}
+                    {alertData?.features?.length > 0 && (
+                    <div className="relative z-20 w-[90%] mt-4 rounded-2xl bg-red-600/90 backdrop-blur-md p-4 text-white border border-red-400 shadow-lg">
+                        {alertData.features.map((alert: any, index: number) => (
+                         <div key={index}>
+                            <h3>⚠ {alert.properties.event}</h3>
+                            <p>{alert.properties.headline}</p>
+                        </div>
+                        ))}
+                    </div>
+                    )}
 
                     {/* --- MAIN HEADER --- 
                         Changed mt-12 to mt-20 to add more space above the city name.
