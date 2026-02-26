@@ -1,0 +1,63 @@
+{
+  "coord": {
+    "lon": -0.1278,
+    "lat": 51.5074
+  },
+  "summery": "few clouds, 52°F, feels like 48°F, winds 10 mph from West-Southwest, 65% humidity",
+  "weather": [
+    {
+      "id": 801,
+      "main": "Clouds",
+      "description": "few clouds",
+      "icon": "02d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temprature": 52,
+    "temprature_feels_like": 48,
+    "temprature_min": 45,
+    "temprature_max": 56,
+    "temprature_unit": "F",
+    "pressure": 1019,
+    "humidity": 65,
+    "humidity_unit": "%",
+    "sea_level_pressure": 1019,
+    "ground_level_pressure": 1015,
+    "pressure_unit": "hPa"
+  },
+  "visibility_distance": 10000,
+  "visibility_unit": "m",
+  "wind": {
+    "speed": 10,
+    "degrees": 250,
+    "speed_unit": "mph"
+  },
+  "clouds": {
+    "cloudiness": 15,
+    "unit": "%"
+  },
+  "rain": {
+    "amount": 0,
+    "unit": "mm in the last 1 hour"
+  },
+  "snow": {
+    "amount": 0,
+    "unit": "mm in the last 1 hour"
+  },
+  "dt": 1733487779,
+  "dt_txt": "2024-12-06 12:22:59",
+  "sys": {
+    "type": 2,
+    "id": 2075535,
+    "country": "GB",
+    "sunrise": 1733471459,
+    "sunrise_txt": "2024-12-06 07:50:59",
+    "sunset": 1733500363,
+    "sunset_txt": "2024-12-06 15:52:43"
+  },
+  "timezone": 0,
+  "id": 4167147,
+  "name": "Lynchburg",
+  "cod": 200
+}
