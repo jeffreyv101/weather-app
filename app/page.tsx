@@ -177,6 +177,64 @@ export default async function Home() {
         const aqiStatus = aqiData?.list?.[0]?.main?.air_quality || "Unknown";
 
         const hourlyForecast = forecastData.list.slice(0, 8);
+        
+        // Get daily forecast - group by day and calculate daily high/low
+        const dailyForecastMap = new Map();
+        const dailyTemps = new Map(); // Track all temps per day
+        const dailyConditions = new Map(); // Track weather conditions per day
+        
+        forecastData.list.forEach((item: any) => {
+            const date = new Date(item.dt * 1000);
+            const dayKey = date.toDateString();
+            const hour = date.getHours();
+            const temp = item.main.temprature;
+            const condition = item.weather[0].main;
+            
+            // Track all temperatures for this day
+            if (!dailyTemps.has(dayKey)) {
+                dailyTemps.set(dayKey, []);
+            }
+            dailyTemps.get(dayKey).push(temp);
+            
+            // Track weather conditions for this day (count occurrences)
+            if (!dailyConditions.has(dayKey)) {
+                dailyConditions.set(dayKey, {});
+            }
+            const conditions = dailyConditions.get(dayKey);
+            conditions[condition] = (conditions[condition] || 0) + 1;
+            
+            // Select a representative forecast (prefer midday for fallback data)
+            if (!dailyForecastMap.has(dayKey)) {
+                dailyForecastMap.set(dayKey, item);
+            } else if (hour >= 11 && hour <= 15) {
+                dailyForecastMap.set(dayKey, item);
+            }
+        });
+        
+        // Calculate high/low and most common condition for each day
+        const dailyForecast = Array.from(dailyForecastMap.entries()).slice(0, 5).map(([dayKey, forecast]) => {
+            const temps = dailyTemps.get(dayKey);
+            const conditions = dailyConditions.get(dayKey);
+            
+            // Prioritize weather conditions by severity (most important first)
+            const priorityOrder = ['Thunderstorm', 'Tornado', 'Squall', 'Snow', 'Rain', 'Drizzle', 'Clouds', 'Clear', 'Mist', 'Fog', 'Haze', 'Smoke', 'Dust', 'Sand', 'Ash'];
+            
+            let mostImportantCondition = 'Clear';
+            for (const priority of priorityOrder) {
+                if (conditions[priority]) {
+                    mostImportantCondition = priority;
+                    break;
+                }
+            }
+            
+            return {
+                ...forecast,
+                dailyHigh: Math.max(...temps),
+                dailyLow: Math.min(...temps),
+                dailyCondition: mostImportantCondition
+            };
+        });
+        
         const gradientClasses = getWeatherGradient(mainCondition, partOfDay);
         const svgFile = getSvgFilename(mainCondition, partOfDay);
 
@@ -264,6 +322,47 @@ export default async function Home() {
                         </div>
                     </div>
 
+                    {/* --- DAILY FORECAST --- */}
+                    <div className="relative z-10 w-[90%] rounded-2xl bg-black/20 backdrop-blur-md p-4 text-white mb-4 shrink-0 border border-white/10 shadow-lg">
+                        <p className="text-xs font-semibold uppercase opacity-70 mb-3">5-Day Forecast</p>
+                        <div className="flex flex-col space-y-3">
+                            {dailyForecast.map((day: any, index: number) => {
+                                // Calculate the correct day name based on current date + index
+                                let dayName;
+                                if (index === 0) {
+                                    dayName = 'Today';
+                                } else if (index === 1) {
+                                    dayName = 'Tomorrow';
+                                } else {
+                                    // Get the actual day name for future days
+                                    const futureDate = new Date();
+                                    futureDate.setDate(futureDate.getDate() + index);
+                                    dayName = futureDate.toLocaleDateString([], { weekday: 'short' });
+                                }
+                                
+                                // Get the icon - use most common condition and always use day icons for daily forecast
+                                const dailyCondition = day.dailyCondition;
+                                const IconComponent = getHourlyIcon(dailyCondition, 'day');
+
+                                return (
+                                    <div key={index} className="flex items-center justify-between">
+                                        <p className="text-sm font-medium w-16">{dayName}</p>
+                                        <div className="flex-grow flex justify-center">
+                                            {IconComponent}
+                                        </div>
+                                        <div className="flex items-center space-x-2">
+                                            <p className="text-sm font-medium opacity-70">{Math.round(day.dailyLow)}°</p>
+                                            <div className="w-20 h-1 bg-white/20 rounded-full overflow-hidden">
+                                                <div className="h-full bg-white/60 rounded-full" style={{ width: '70%' }}></div>
+                                            </div>
+                                            <p className="text-sm font-bold">{Math.round(day.dailyHigh)}°</p>
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+
                     {/* --- THE NEW WIDGET GRID --- */}
                     <div className="relative z-10 w-[90%] grid grid-cols-2 gap-4 mb-5 shrink-0 text-white">
                         
@@ -345,14 +444,19 @@ export default async function Home() {
                             </div>
                         </div>
                     </div>
+
+                    {/* --- RADAR WIDGET --- */}
                     <div className="relative z-10 w-[90%] rounded-2xl bg-black/20 backdrop-blur-md p-4 text-white mb-10 shrink-0 border border-white/10 shadow-lg">
                         <div className="flex items-center space-x-2 opacity-70 mb-4">
                             <Radar size={14} />
                             <p className="text-xs font-semibold uppercase">Radar</p>
                         </div>
-
-                        <iframe className="mb-2 rounded-2xl" width="305" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=37.383&lon=-79.218"></iframe>
-                        
+                        <iframe 
+                            className="mb-2 rounded-2xl" 
+                            width="305" 
+                            height="450" 
+                            src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=37.383&lon=-79.218"
+                        ></iframe>
                     </div>
                 </main>
             </div>
