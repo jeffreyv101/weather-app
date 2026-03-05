@@ -153,7 +153,8 @@ export default async function Home() {
         }
         
         // --- DATA EXTRACTION ---
-        const currentData = forecastData.list[0];
+        // Use current weather data for accurate current temp, falls back to forecast if needed
+        const currentData = aqiData?.main ? aqiData : forecastData.list[0];
         const currentTemp = currentData.main.temprature;
         const feelsLike = currentData.main.temprature_feels_like;
         const currentTempMin = currentData.main.temprature_min;
@@ -176,7 +177,44 @@ export default async function Home() {
         const aqiIndex = aqiData?.list?.[0]?.main?.air_quality_index || "--";
         const aqiStatus = aqiData?.list?.[0]?.main?.air_quality || "Unknown";
 
-        const hourlyForecast = forecastData.list.slice(0, 8);
+        // Generate hourly forecast by interpolating between 3-hour data points
+        const hourlyForecast = [];
+        const forecastList = forecastData.list;
+        
+        for (let i = 0; i < forecastList.length - 1; i++) {
+            const current = forecastList[i];
+            const next = forecastList[i + 1];
+            
+            hourlyForecast.push(current);
+            
+            // Interpolate 2 hours between each 3-hour forecast point
+            const currentTemp = current.main.temprature;
+            const nextTemp = next.main.temprature;
+            const tempDiff = (nextTemp - currentTemp) / 3;
+            
+            for (let hour = 1; hour <= 2; hour++) {
+                const interpolatedTemp = currentTemp + (tempDiff * hour);
+                const interpolatedTime = current.dt + (hour * 3600); // hour in seconds
+                
+                const interpolatedForecast = {
+                    ...current,
+                    dt: interpolatedTime,
+                    main: {
+                        ...current.main,
+                        temprature: interpolatedTemp,
+                        temprature_feels_like: current.main.temprature_feels_like + (((next.main.temprature_feels_like - current.main.temprature_feels_like) / 3) * hour)
+                    }
+                };
+                
+                hourlyForecast.push(interpolatedForecast);
+            }
+        }
+        
+        // Add the last data point
+        hourlyForecast.push(forecastList[forecastList.length - 1]);
+        
+        // Limit to 24 hours ahead
+        const hourlyForecastDisplay = hourlyForecast.slice(0, 24);
         
         // Get daily forecast - group by day and calculate daily high/low
         const dailyForecastMap = new Map();
@@ -297,7 +335,7 @@ export default async function Home() {
                     {/* --- HOURLY FORECAST --- */}
                     <div className="relative z-10 w-[90%] rounded-2xl bg-black/20 backdrop-blur-md p-4 text-white mb-4 shrink-0 border border-white/10 shadow-lg">
                         <div className="flex w-full space-x-6 overflow-x-auto scrollbar-hide pb-2">
-                            {hourlyForecast.map((hour: any, index: number) => {
+                            {hourlyForecastDisplay.map((hour: any, index: number) => {
                                 // Get the time format (e.g., "3 PM")
                                 const time = new Date(hour.dt * 1000).toLocaleTimeString([], { hour: 'numeric' });
                                 
