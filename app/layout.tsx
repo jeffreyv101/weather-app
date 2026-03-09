@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces } from 'next/font/google';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,6 +13,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  axes: ['SOFT', 'WONK'],
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: "Weather App",
   description: "CSCN 408 Assignment 3 - Weather App",
@@ -19,16 +27,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      {/* Add suppressHydrationWarning right here! */}
+      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}>
         {children}
       </body>
     </html>
-  );
+  )
 }

@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Define the font variable to match layout.tsx */
+  --font-fraunces: var(--font-fraunces); 
 }
 
 @theme inline {
@@ -10,6 +12,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Add Fraunces to your Tailwind theme */
+  --font-fraunces: var(--font-fraunces);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,8 +27,36 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Optional: Set a clean default font */
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui;
 }
+
+/* --- AESTHETIC UTILITIES --- */
+
+@layer utilities {
+  /* Use this for your massive temperature digits */
+  .font-soft-lg {
+    font-family: var(--font-fraunces);
+    font-variation-settings: "SOFT" 100, "WONK" 1;
+    letter-spacing: -0.05em;
+  }
+
+  /* Use this for a cleaner, but still organic look */
+  .font-soft-md {
+    font-family: var(--font-fraunces);
+    font-variation-settings: "SOFT" 50, "WONK" 0;
+  }
+  
+  /* Glassmorphism effect for your widgets */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* KEEP YOUR EXISTING CLASSES BELOW */
 .warningContainer {
   margin: 20px;
 }
