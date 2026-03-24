@@ -2,7 +2,9 @@
 
 A modern, responsive weather application built with Next.js 16, featuring real-time weather data, forecasts, air quality monitoring, and interactive weather radar for Lynchburg, Virginia.
 
-![Main Weather View](public/readme/demo-main.png)
+| Main Weather View | Forecast View |
+|---|---|
+| ![Main Weather View](public/readme/demo-main.png) | ![Forecast View](public/readme/demo-forecast.png) |
 
 ## Table of Contents
 
